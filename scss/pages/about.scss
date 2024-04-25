@@ -1,0 +1,38 @@
+.about {
+    @include sizes(100%, auto);
+    background-color: $color-brown;
+    padding: 1rem;
+    &__box {
+        @include grid;
+        grid-template-columns: 3fr 2fr;
+        &__text {
+            padding: 2rem;
+            h2, h3, p {
+                color: $color-white;
+            }
+            h2 {
+                font-family: $font-title;
+                font-size: 7rem;
+                margin-bottom: 2rem;
+            }
+            h3 {
+                font-family: $font-title;
+                font-size: 4rem;
+                margin-bottom: 2rem;
+            }
+        }
+        &__image {
+            @include flex;
+            padding: 1rem;
+            img {
+                width: 80%;
+                border-radius: 2rem;
+            }    
+        }
+        hr {
+            border: 2px double $color-white;
+            margin: 3rem 0;
+            width: 50%;
+        }
+    } 
+}

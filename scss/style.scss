@@ -1,0 +1,18 @@
+//IMPORTS UTILITIES
+
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+//IMPORTS MISC
+
+@import "./misc/generals";
+@import "./misc/menu";
+@import "./misc/footer";
+@import "./misc/carousel.scss";
+
+//IMPORTS VIEWS
+
+@import "./pages/hero";
+@import "./pages/about";
+@import "./pages/eventos";
+@import "./pages/poducciones.scss";

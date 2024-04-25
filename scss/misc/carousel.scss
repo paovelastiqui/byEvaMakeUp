@@ -1,0 +1,8 @@
+.divisor_carousel {
+    background-color: $color-brown;
+    padding-bottom: 3rem;
+    .carousel {
+        margin: 0 auto;
+       @include sizes(80%, auto); 
+    }
+}

@@ -1,0 +1,32 @@
+.footer {
+    @include sizes(100%, auto);
+    display: flex;
+    flex-direction: column;
+    background-color: $color-brown;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    hr {
+        border: 2px double $color-white;
+        width: 75%;
+    }
+    &__redes {
+        margin: 1rem 0;
+        a {
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        
+    }
+    &__text {
+        p {
+            font-size: 1.7rem;
+            text-align: center;
+            color: $color-white;
+            margin: 1rem 0;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}

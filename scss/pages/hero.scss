@@ -1,0 +1,34 @@
+//HERO
+
+.hero {
+    @include flex;
+    @include sizes(100%, 100vh);
+    background-image: url('../img/bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    &__bg {
+        @include sizes(100%, 100%);
+        background-color: black;
+        opacity: 0.8;
+        position: relative;
+        z-index: 0;
+    }
+    &__titles {
+        @include flex;
+        flex-direction: column;
+        color: $color-white;
+        position: absolute;  
+        z-index: 1;
+        h1 {
+            font-size: 10rem;
+            font-weight: lighter;
+            margin-bottom: 0.5rem;
+            font-family: $font-principal;
+        } 
+        p {
+            font-size: 3.2rem;
+        }
+    }
+}

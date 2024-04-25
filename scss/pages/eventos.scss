@@ -1,0 +1,36 @@
+.eventos {
+    @include sizes(100%, auto);
+    background-color: $color-brown;
+    padding: 2rem 2rem 6rem 2rem;
+    &__box {
+        @include flex;
+        flex-direction: column;
+        hr {
+            border: 2px double $color-white;
+            margin: 3rem 0;
+            width: 50%;
+        }
+        h2 {
+            color: $color-white;
+            font-family: $font-title;
+            font-size: 7rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: $color-white;
+            margin-bottom: 3rem;
+        }
+        &__images {
+            @include grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            .img-contain {
+                object-fit: cover;
+                img {
+                    width: 100%;
+                }     
+            }
+               
+        }
+    } 
+}

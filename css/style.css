@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Forum", serif; }
+
+html {
+  font-size: 62.5%; }
+
+h3 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+a {
+  text-decoration: none; }
+
+p {
+  font-size: 2rem; }
+
+.container {
+  max-width: 1440px; }
+
+.nav a {
+  font-size: 1.6rem;
+  color: #c5bd99; }
+
+.nav a:hover {
+  color: #c5bd99; }
+
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #130F06;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0; }
+  .footer hr {
+    border: 2px double #c5bd99;
+    width: 75%; }
+  .footer__redes {
+    margin: 1rem 0; }
+    .footer__redes a {
+      text-decoration: none;
+      margin: 0 1rem; }
+  .footer__text p {
+    font-size: 1.7rem;
+    text-align: center;
+    color: #c5bd99;
+    margin: 1rem 0; }
+    .footer__text p span {
+      font-weight: bold; }
+
+.divisor_carousel {
+  background-color: #130F06;
+  padding-bottom: 3rem; }
+  .divisor_carousel .carousel {
+    margin: 0 auto;
+    width: 80%;
+    height: auto; }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .hero__bg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    position: relative;
+    z-index: 0; }
+  .hero__titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #c5bd99;
+    position: absolute;
+    z-index: 1; }
+    .hero__titles h1 {
+      font-size: 10rem;
+      font-weight: lighter;
+      margin-bottom: 0.5rem;
+      font-family: "Whisper", cursive; }
+    .hero__titles p {
+      font-size: 3.2rem; }
+
+.about {
+  width: 100%;
+  height: auto;
+  background-color: #130F06;
+  padding: 1rem; }
+  .about__box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 3fr 2fr; }
+    .about__box__text {
+      padding: 2rem; }
+      .about__box__text h2, .about__box__text h3, .about__box__text p {
+        color: #c5bd99; }
+      .about__box__text h2 {
+        font-family: "Forum", serif;
+        font-size: 7rem;
+        margin-bottom: 2rem; }
+      .about__box__text h3 {
+        font-family: "Forum", serif;
+        font-size: 4rem;
+        margin-bottom: 2rem; }
+    .about__box__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem; }
+      .about__box__image img {
+        width: 80%;
+        border-radius: 2rem; }
+    .about__box hr {
+      border: 2px double #c5bd99;
+      margin: 3rem 0;
+      width: 50%; }
+
+.eventos {
+  width: 100%;
+  height: auto;
+  background-color: #130F06;
+  padding: 2rem 2rem 6rem 2rem; }
+  .eventos__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .eventos__box hr {
+      border: 2px double #c5bd99;
+      margin: 3rem 0;
+      width: 50%; }
+    .eventos__box h2 {
+      color: #c5bd99;
+      font-family: "Forum", serif;
+      font-size: 7rem;
+      margin-bottom: 1rem; }
+    .eventos__box p {
+      color: #c5bd99;
+      margin-bottom: 3rem; }
+    .eventos__box__images {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem; }
+      .eventos__box__images .img-contain {
+        object-fit: cover; }
+        .eventos__box__images .img-contain img {
+          width: 100%; }
+
+.producciones {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #130F06;
+  text-align: center; }
+  .producciones hr {
+    border: 2px double #c5bd99;
+    margin: 0 auto;
+    width: 50%; }
+  .producciones h2 {
+    color: #c5bd99;
+    font-family: "Forum", serif;
+    font-size: 7rem;
+    margin: 3rem 0; }
+  .producciones h3 {
+    color: #c5bd99;
+    font-family: "Forum", serif;
+    font-weight: bold;
+    font-size: 5rem;
+    margin-bottom: 2rem; }
+  .producciones h4 {
+    color: #c5bd99;
+    font-weight: bold;
+    font-size: 3rem; }

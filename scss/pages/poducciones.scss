@@ -1,0 +1,30 @@
+.producciones {
+    @include sizes(100%, auto);
+    display: flex;
+    flex-direction: column;
+    background-color: $color-brown;
+    text-align: center;
+    hr {
+        border: 2px double $color-white;
+        margin: 0 auto;
+        width: 50%;
+    }
+    h2 {
+        color: $color-white;
+        font-family: $font-title;
+        font-size: 7rem;
+        margin: 3rem 0;
+    }
+    h3 {
+        color: $color-white;
+        font-family: $font-title;
+        font-weight: bold;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+    h4 {
+        color: $color-white;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}
