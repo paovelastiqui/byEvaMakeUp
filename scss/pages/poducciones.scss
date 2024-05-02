@@ -15,16 +15,48 @@
         font-size: 7rem;
         margin: 3rem 0;
     }
-    h3 {
-        color: $color-white;
-        font-family: $font-title;
-        font-weight: bold;
-        font-size: 5rem;
-        margin-bottom: 2rem;
+    &__img {
+        margin: 0 auto;
+        width: 80%;
+        border-radius: 3rem;
     }
-    h4 {
-        color: $color-white;
-        font-weight: bold;
-        font-size: 3rem;
-    }
+    // h3 {
+    //     color: $color-white;
+    //     font-family: $font-title;
+    //     font-weight: bold;
+    //     font-size: 5rem;
+    //     margin-bottom: 2rem;
+    // }
+    // h4 {
+    //     color: $color-white;
+    //     font-weight: bold;
+    //     font-size: 3rem;
+    // }
+}
+
+.produ {
+    @include sizes(100%, auto);
+    background-color: $color-brown;
+    padding: 2rem 2rem 6rem 2rem;
+    &__box {
+        @include flex;
+        flex-direction: column;
+        hr {
+            border: 2px double $color-white;
+            margin: 3rem 0;
+            width: 50%;
+        }
+        &__images {
+            @include grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            .img-contain {
+                object-fit: cover;
+                img {
+                    width: 100%;
+                }     
+            }
+               
+        }
+    } 
 }
