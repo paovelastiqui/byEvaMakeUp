@@ -37,7 +37,7 @@
 .produ {
     @include sizes(100%, auto);
     background-color: $color-brown;
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 6rem 2rem 2rem 2rem;
     &__box {
         @include flex;
         flex-direction: column;
@@ -59,4 +59,36 @@
                
         }
     } 
+}
+
+@media screen and (max-width: 1000px) {
+    .producciones {
+        h2 {
+            font-size: 6rem;
+        }  
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .producciones {
+        h2 {
+            font-size: 5rem;
+        }    
+    }
+
+    .produ {
+        &__box {
+            &__images {
+                grid-template-columns: 1fr 1fr;     
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .producciones {
+        h2 {
+            font-size: 4rem;
+        }   
+    }
 }

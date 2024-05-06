@@ -1,9 +1,18 @@
-.nav {
-    a {
-        font-size: 1.6rem;
-        color: $color-white; 
+//MENU
+
+.navbar {
+    background-color: $color-brown;
+    opacity: 0.8;
+    button {
+        background-color: $color-white;
     }
-    a:hover {
-        color: $color-white; 
+    .nav {
+        a {
+            font-size: 1.7rem;
+            color: $color-white; 
+        }
+        a:hover {
+            color: $color-white; 
+        }    
     }    
 }

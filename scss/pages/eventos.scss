@@ -30,7 +30,43 @@
                     width: 100%;
                 }     
             }
-               
+   
         }
     } 
+}
+
+@media screen and (max-width: 1000px) {
+    .eventos__box {
+        h2 {
+            font-size: 6rem;
+        }
+        p {
+            font-size: 2rem;
+        }    
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .eventos__box {
+        h2 {
+            font-size: 5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        &__images {
+            grid-template-columns: 1fr 1fr;  
+        }  
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .eventos__box {
+        h2 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }    
+    }
 }

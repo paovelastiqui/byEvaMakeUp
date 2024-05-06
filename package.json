@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-sass": "node-sass --include-path scss scss/style.scss css/style.css",
-  "watch-sass": "nodemon -e scss -x  \"npm run build-sass\""
+    "watch-sass": "nodemon -e scss -x  \"npm run build-sass\""
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,8 @@
   "devDependencies": {
     "node-sass": "^9.0.0",
     "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

@@ -26,9 +26,32 @@
             font-weight: lighter;
             margin-bottom: 0.5rem;
             font-family: $font-special;
+            text-align: center;
         } 
         p {
             font-size: 3.2rem;
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    .hero__titles {
+        h1 {
+            font-size: 8rem;
+        }
+        p {
+            font-size: 2.75rem;
+        } 
+    }    
+}
+
+@media screen and (max-width: 576px) {
+    .hero__titles {
+        h1 {
+            font-size: 6rem;
+        }   
+        p {
+            font-size: 2.5rem;
+        }  
+    }    
 }

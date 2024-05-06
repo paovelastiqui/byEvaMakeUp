@@ -5,7 +5,7 @@
     background-color: $color-brown;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
+    padding: 0 0 3rem 0;
     hr {
         border: 2px double $color-white;
         width: 75%;
@@ -16,7 +16,6 @@
             text-decoration: none;
             margin: 0 1rem;
         }
-        
     }
     &__text {
         p {
@@ -28,5 +27,13 @@
                 font-weight: bold;
             }
         }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer__text {
+        p {
+            font-size: 1.3rem;
+        }   
     }
 }

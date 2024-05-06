@@ -1,13 +1,12 @@
 .about {
-    @include sizes(100%, 170vh);
-    //@include flex;
+    @include sizes(100%, 140vh);
     background-image: url('../img/about/about2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
     &__bg {
-        @include sizes(100%, 170%);
+        @include sizes(100%, 140vh);
         background-color: white;
         opacity: 0.5;
         position: absolute;
@@ -21,7 +20,6 @@
         align-items: center;
         position: relative;  
         z-index: 2;
-        //padding: 0rem 15rem;
         hr {
             border: 2px double $color-black;
             margin: 8rem 0 3rem 0;
@@ -29,32 +27,39 @@
         }
         h2 {
             font-family: $font-title;
-            font-size: 5rem;
+            font-size: 7rem;
             margin-bottom: 2rem;
             color: $color-black;
         }
         &__contain {
             //@include sizes(70%, 100%);
             display: grid;
-            grid-template-columns: 3fr 2fr;
-            padding: 0rem 15rem;
-            //padding: 0 5rem;
-            // justify-content: space-between;
-            //align-items: center;
+            grid-template-columns: 2fr 1fr;
+            padding: 0rem 12rem;
             .text {
-                .carousel-item {
-                    width: 80%;
-                    max-width: 1000px;
-                    //padding: 0 6rem;
+                padding-right: 5rem;
+                h3 {
+                    color: $color-black;
+                    font-family: $font-title;
+                    font-size: 3rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
                 }
-                //width: 70%;
-                //padding: 2rem;
+                p {
+                    color: $color-black;
+                    margin-bottom: 0;
+                    font-size: 2rem;
+                }
+                span {
+                    font-size: 3rem;
+                    margin: 0 0 0 0.5rem;
+                }
             }
             .image {
                 @include flex;
                 text-align: center;
                 img {
-                    width: 80%;
+                    width: 100%;
                     border-radius: 15%;
                     box-shadow: 0px 0px 68px 23px rgba(0,0,0,0.75);
                 } 
@@ -78,14 +83,14 @@
                     z-index: 0;
                 } 
                 &__bg {
-                    @include sizes(100%, 100%);
+                    @include sizes(300px, 300px);
                     background-color: $color-black;
                     opacity: 0.8;
                     position: absolute;
                     z-index: 1;
                 } 
                 &__text {
-                    @include sizes(100%, 100%);
+                    @include sizes(300px, 300px);
                     @include flex;
                     padding: 1rem;
                     position: absolute;
@@ -93,33 +98,101 @@
                     p {
                         color: $color-white;
                         font-size: 3rem;
-                        font-weight: bold;
-                    
-                } 
+                        font-weight: bold; 
+                        text-align: center;
+                    } 
                 }
-                 
-            }
-            
-        }
-
-        
-        
-        h3, p {
-            color: $color-black;
-        }
-        h3 {
-            font-family: $font-title;
-            font-size: 3rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            margin-bottom: 0;
-            font-size: 2rem;
-        }
-        span {
-            font-size: 3rem;
-            margin: 0 0 0 0.5rem;
+            } 
         }
     }
 }  
+
+@media screen and (max-width: 1200px) {
+    .about {
+        @include sizes(100%, 125vh);
+        &__bg {
+            @include sizes(100%, 125vh);
+        }
+        &__box {
+            h2 {
+                font-size: 6rem;
+                margin-bottom: 2rem;
+            }
+            &__contain {
+                padding: 0rem 10rem;
+                .text {
+                    p {
+                        font-size: 1.75rem;
+                    } 
+                }
+                .image {
+                    img {
+                        width: 100%;
+                    } 
+                }    
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .about__box {
+        h2 {
+            font-size: 6rem;
+        }
+        &__contain {
+            .text {
+                p {
+                    font-size: 1.5rem;
+                } 
+            }
+            .image {
+                img {
+                    width: 100%;
+                } 
+            }
+        }    
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        @include sizes(100%, 165vh);
+        &__bg {
+            @include sizes(100%, 165vh);
+        }
+        &__box {
+            h2 {
+                font-size: 5rem;
+            }
+            &__contain {
+                grid-template-columns: 1fr;
+                padding: 0rem 3rem;
+                .text {
+                    padding-right: 0rem;
+                }
+                .image {
+                    margin-top: 3rem;
+                    img {
+                        width: 45%;
+                    } 
+                }
+            }    
+        }
+    }
+
+    .cards {
+        .card {
+            @include sizes(200px, 200px);
+        }    
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    .about__box {
+        h2 {
+            font-size: 4rem;
+        }   
+    }
+}
