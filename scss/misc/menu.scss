@@ -1,18 +1,38 @@
 //MENU
 
+nav {
+    z-index: 1030;
+    top: 0;
+}
+
 .navbar {
+    flex-wrap: nowrap !important;
     background-color: $color-brown;
     opacity: 0.8;
+    a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-white;
+    }
+    a:hover {
+        color: $color-white; 
+    } 
     button {
         background-color: $color-white;
-    }
-    .nav {
-        a {
-            font-size: 1.7rem;
-            color: $color-white; 
-        }
-        a:hover {
-            color: $color-white; 
-        }    
-    }    
+    }  
 }
+
+// .fixed-top {
+//     position: sticky !important;
+// }
+
+// .navbar-collapse {
+//     .nav {
+//         display: flex;
+//         flex-direction: column;
+//     }
+// }
+
+// .navbar>.container-fluid {
+//     align-items: flex-start !important;
+// }

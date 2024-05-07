@@ -158,9 +158,9 @@
 
 @media screen and (max-width: 768px) {
     .about {
-        @include sizes(100%, 165vh);
+        @include sizes(100%, 130vh);
         &__bg {
-            @include sizes(100%, 165vh);
+            @include sizes(100%, 130vh);
         }
         &__box {
             h2 {
